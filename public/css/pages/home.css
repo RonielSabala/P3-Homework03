@@ -12,6 +12,12 @@
 
   --warning: #ffc107;
   --warning-hover: #e0a800;
+
+  --danger: #dc3545;
+  --danger-hover: #a71d2a;
+
+  --info: #17a2b8;
+  --info-hover: #117a8b;
 }
 
 h2 {
@@ -33,7 +39,9 @@ h2 {
 
 .btn-primary,
 .btn-detail,
-.btn-warning {
+.btn-warning,
+.btn-danger,
+.btn-info {
   color: #fff;
   border: 1px solid;
   padding: 6px 12px;
@@ -75,6 +83,26 @@ h2 {
   color: #fff;
 }
 
+.btn-danger {
+  background: var(--danger);
+  border-color: var(--danger);
+}
+
+.btn-danger:hover {
+  background: var(--danger-hover);
+  border-color: var(--danger-hover);
+}
+
+.btn-info {
+  background: var(--info);
+  border-color: var(--info);
+}
+
+.btn-info:hover {
+  background: var(--info-hover);
+  border-color: var(--info-hover);
+}
+
 .btn-outline-action {
   background: transparent;
   border: 1px solid #0000001c;
@@ -89,6 +117,16 @@ h2 {
 
 .btn-outline-action.btn-warning:hover {
   border-color: var(--warning);
+  color: white;
+}
+
+.btn-outline-action.btn-danger:hover {
+  border-color: var(--danger);
+  color: white;
+}
+
+.btn-outline-action.btn-info:hover {
+  border-color: var(--info);
   color: white;
 }
 
