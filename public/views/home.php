@@ -33,6 +33,9 @@
                         <a href="edit.php?id=<?= $factura->id ?>" class="btn btn-outline-action btn-warning" title="Editar">
                             <i class="bi bi-pencil-square"></i>
                         </a>
+                        <a href="delete.php?id=<?= $factura->id ?>" class="btn btn-outline-action btn-danger" title="Eliminar">
+                            <i class="bi bi-trash"></i>
+                        </a>
                     </div>
                 </td>
             </tr>
