@@ -25,7 +25,13 @@
                 <td><?= htmlspecialchars($factura->nombre_cliente) ?></td>
                 <td><?= htmlspecialchars($factura->comentario) ?></td>
                 <td><?= htmlspecialchars($factura->total) ?></td>
-                <td></td>
+                <td>
+                    <div class="d-flex gap-1">
+                        <a href="details.php?id=<?= $factura->id ?>" class="btn btn-outline-action btn-detail" title="Detalles">
+                            <i class="bi bi-info-circle"></i>
+                        </a>
+                    </div>
+                </td>
             </tr>
         <?php
         }

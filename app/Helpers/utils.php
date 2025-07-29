@@ -81,4 +81,30 @@ class Utils
             return null;
         }
     }
+
+    public static function getAllInvoiceDetails($pdo)
+    {
+        if (!isset($_GET['id'])) {
+            Utils::showAlert('No se especificó la factura.', 'danger');
+            exit;
+        }
+
+        $id = intval($_GET['id']);
+        $factura = Utils::getInvoiceById($pdo, $id);
+
+        // ID invalido
+        if (!$factura) {
+            Utils::showAlert('Factura no encontrada!', 'danger');
+            exit;
+        }
+
+        return [
+            'id' => $factura->id,
+            'fecha_emision' => $factura->fecha_emision,
+            'nombre_cliente' => $factura->nombre_cliente,
+            'total' => $factura->total,
+            'comentario' => $factura->comentario,
+            'detalles' => Utils::getInvoiceDetailsById($pdo, $id),
+        ];
+    }
 }
