@@ -30,6 +30,9 @@
                         <a href="details.php?id=<?= $factura->id ?>" class="btn btn-outline-action btn-detail" title="Detalles">
                             <i class="bi bi-info-circle"></i>
                         </a>
+                        <a href="edit.php?id=<?= $factura->id ?>" class="btn btn-outline-action btn-warning" title="Editar">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
                     </div>
                 </td>
             </tr>
