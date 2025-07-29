@@ -6,6 +6,9 @@
 
   --primary: #007bff;
   --primary-hover: #0056b3;
+
+  --detail: #6c757d;
+  --detail-hover: #495057;
 }
 
 h2 {
@@ -25,7 +28,8 @@ h2 {
   margin-right: 4px;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-detail {
   color: #fff;
   border: 1px solid;
   padding: 6px 12px;
@@ -41,6 +45,30 @@ h2 {
 .btn-primary:hover {
   background: var(--primary-hover);
   border-color: var(--primary-hover);
+}
+
+.btn-detail {
+  background: var(--detail);
+  border-color: var(--detail);
+  color: #fff;
+}
+
+.btn-detail:hover {
+  background: var(--detail-hover);
+  border-color: var(--detail-hover);
+  color: #fff;
+}
+
+.btn-outline-action {
+  background: transparent;
+  border: 1px solid #0000001c;
+  color: inherit;
+  width: 100%;
+}
+
+.btn-outline-action.btn-detail:hover {
+  border-color: var(--detail);
+  color: white;
 }
 
 .table {

@@ -18,6 +18,7 @@ class Router
             ''            => $default_uri,
             'home.php'    => $default_uri,
             'index.php'   => $default_uri,
+            'details.php' => ['page' => 'home',   'controller' => \App\Controllers\DetailsController::class],
             'edit.php'    => ['page' => 'home',   'controller' => \App\Controllers\EditController::class],
         ];
 
