@@ -21,6 +21,7 @@ class Router
             'details.php' => ['page' => 'home',   'controller' => \App\Controllers\DetailsController::class],
             'edit.php'    => ['page' => 'home',   'controller' => \App\Controllers\EditController::class],
             'delete.php'  => ['page' => 'home',   'controller' => \App\Controllers\DeleteController::class],
+            'report.php'  => ['page' => 'report', 'controller' => \App\Controllers\ReportController::class],
         ];
 
         // Obtener ruta
