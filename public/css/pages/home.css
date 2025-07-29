@@ -9,6 +9,9 @@
 
   --detail: #6c757d;
   --detail-hover: #495057;
+
+  --warning: #ffc107;
+  --warning-hover: #e0a800;
 }
 
 h2 {
@@ -29,7 +32,8 @@ h2 {
 }
 
 .btn-primary,
-.btn-detail {
+.btn-detail,
+.btn-warning {
   color: #fff;
   border: 1px solid;
   padding: 6px 12px;
@@ -59,6 +63,18 @@ h2 {
   color: #fff;
 }
 
+.btn-warning {
+  background: var(--warning);
+  border-color: var(--warning);
+  color: #212529;
+}
+
+.btn-warning:hover {
+  background: var(--warning-hover);
+  border-color: var(--warning-hover);
+  color: #fff;
+}
+
 .btn-outline-action {
   background: transparent;
   border: 1px solid #0000001c;
@@ -68,6 +84,11 @@ h2 {
 
 .btn-outline-action.btn-detail:hover {
   border-color: var(--detail);
+  color: white;
+}
+
+.btn-outline-action.btn-warning:hover {
+  border-color: var(--warning);
   color: white;
 }
 
