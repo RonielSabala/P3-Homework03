@@ -20,6 +20,7 @@ class Router
             'index.php'   => $default_uri,
             'details.php' => ['page' => 'home',   'controller' => \App\Controllers\DetailsController::class],
             'edit.php'    => ['page' => 'home',   'controller' => \App\Controllers\EditController::class],
+            'delete.php'  => ['page' => 'home',   'controller' => \App\Controllers\DeleteController::class],
         ];
 
         // Obtener ruta
