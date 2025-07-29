@@ -1,4 +1,9 @@
 <h2>Listado de facturas</h2>
+<div class="d-flex justify-content-end mb-3">
+    <a href="edit.php" class="btn btn-primary">
+        <i class="bi bi-plus-circle"></i> Crear
+    </a>
+</div>
 <table class="table">
     <thead>
         <tr>
