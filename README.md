@@ -1,10 +1,14 @@
-# Instrucciones para ejecutar el proyecto:
+# Instrucciones para ejecutar el proyecto
 
 _Requisitos_:
 
 - MySQL
 
-## 1. Creación de la base de datos
+## 1. Conexión con la base de datos
+
+Configura los datos de conexión en el archivo `config/db_config.php`.
+
+## 2. Creación de la base de datos
 
 Para ello, ejecuta el siguiente comando:
 
@@ -12,13 +16,9 @@ Para ello, ejecuta el siguiente comando:
 php config/install.php
 ```
 
-## 2. Conexión con la base de datos
-
-Configura los datos de conexión en el archivo `/config/db_config.php`.
-
 ## 3. Ejecución
 
-En la raíz del proyecto, ejecuta el siguiente comando para iniciar el servidor:
+Para iniciar el servidor PHP, ejecuta:
 
 ```bash
 php -S localhost:1111 -t public
